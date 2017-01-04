@@ -219,7 +219,7 @@ For instance, you may list the name of the device, its `Light` service as well a
 **[Task]** Install a Java Development Kit to run the `RaspLight` device on the Raspberry Pi.
 Manipulate the device remotely with the client.
 
-## 3. Putting things together 
+## 3. Putting Things Together 
 
 In this section, we connect an actual light to the Raspberry PI and manipulate it via the Light service.
 To this end, we have to form a circuit using a resistor.
