@@ -207,9 +207,9 @@ This field indicates whether the light is on or off.
 Define a (public) method `void setStatus(boolean newStatus)` to change the status of the light.
 The method `boolean getStatus()` returns the status of the light.
 
-**[Task]** Implement a UPnP service named `Light`that interfaces an object of the `Light` class.
+**[Task]** Implement a UPnP service named `LightService`that interfaces an object of the `Light` class.
 
-**[Task]** Implement a UPnP device named `RaspLight` that offer the `Light` service.
+**[Task]** Implement a UPnP device named `RaspLight` that offers the `LightService` service.
 
 **[Task]** Start a `RaspLight` device and dialog with it using a dummy control point.
 For instance, you may list the name of the device, its `Light` service as well as the actions available through the service.
