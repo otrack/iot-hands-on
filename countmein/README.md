@@ -249,8 +249,10 @@ This server manage polls and allows to manipulate them with a REST API.
 A full description of the service API used is available [here](https://github.com/otrack/doodle-rest2).
 
 **[Task]** Create a [rule](https://my.artik.cloud/rules) in ARTIK Cloud such that once the smart button is pushed, the platform sends an HTTP message that makes you participate to poll [734969d1-99bb-4fba-b7fb-c68b9df48c04](http://doodle-datascaletest.rhcloud.com/rest/poll/734969d1-99bb-4fba-b7fb-c68b9df48c04).
+To successfully record your name in the poll, we advice you to first check that you forge a correct HTTP request.
+For instance, you may use this [web service](http://requestmaker.com) to forge a request, [this]() one to check the correctnes of your JSON payload, and [that](https://www.uuidgenerator.net) service to generate a UUID.
 
-## 4. Your own poll service *(90')*
+## 4. Your own poll service *(optional)*
 
 In this last step, we propose you to host your own poll service.
 To this end, we will use the free tier of [OpenShift Online](https://www.openshift.com/devpreview/register.html), an online Platform-as-a-Service (PaaS) run by RedHat.
