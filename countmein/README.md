@@ -1,4 +1,4 @@
-# Developing a Smart Push-button 
+# IoT Platforms - Developing a Smart Push-button 
 
 In this practical, we create a smart push-button to fulfill successfully an online poll.
 To build the smart button, we use a [WeMos D1](https://www.wemos.cc/product/d1.html), a few electronic components, and the [Artik Cloud](https://artik.cloud) IoT platform.
