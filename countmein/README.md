@@ -34,7 +34,11 @@ The Arduino IDE cross-compiles our code to the AVR instruction sets, uploads it 
 Further details about this build process are available [online](https://www.arduino.cc/en/Hacking/BuildProcess).
 
 **[Task]** By default, the Arduino IDE does not support boards based on the ESP8266 chip.
-To add this support, navigate to *[Boards - Boards Manager]* and search for "esp8266".
+To add this support, navigate in *[File - Preferences]*, and copy the URL below in the *Additional Board Manager URLs* text box:
+
+    http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+Then, navigate to *[Boards - Boards Manager]* and search for "esp8266".
 Install version *2.3.0* of the ESP8266 support.
 The sources of this support, as well as its documentation are available on the  [following](https://github.com/esp8266/Arduino) repository.
 
