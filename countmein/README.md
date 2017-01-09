@@ -248,9 +248,10 @@ You will find an online poll server at the following [address](http://doodle-dat
 This server manage polls and allows to manipulate them with a REST API.
 A full description of the service API used is available [here](https://github.com/otrack/doodle-rest2).
 
-**[Task]** Create a [rule](https://my.artik.cloud/rules) in ARTIK Cloud such that once the smart button is pushed, the platform sends an HTTP message that makes you participate to poll [54244274-5022-42bd-8eb6-e81fb5dd5926](http://doodle-datascaletest.rhcloud.com/rest/poll/54244274-5022-42bd-8eb6-e81fb5dd5926).
+**[Task]** Create a [rule](https://my.artik.cloud/rules) in ARTIK Cloud such that once the smart button is pushed, the platform sends an HTTP message that makes you participate to the [unique](http://doodle-datascaletest.rhcloud.com/rest/polls) poll listed on the server.
+
 To successfully record your name in the poll, we advice you to first check that you forge a correct HTTP request.
-For instance, you may use this [web service](http://requestmaker.com) to forge a request, [this](https://jsonformatter.curiousconcept.com) one to check the correctnes of your JSON payload, and [that](https://www.uuidgenerator.net) one to generate a UUID.
+For instance, you may use this [web service](http://requestmaker.com) to forge a request, [this](https://jsonformatter.curiousconcept.com) one to check the correctnes of your JSON payload, and [that](https://www.uuidgenerator.net) one to generate a correect UUID.
 
 ## 4. Your own poll service *(optional)*
 
