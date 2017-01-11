@@ -56,8 +56,7 @@ At core this class is a listener which receives messages from other nodes as cac
 **[Task]** Create a `SimpleNode` class that sub-classes the `Node` class.
 This class should simply print the message it receives by overriding the method `receiveMessage(Message msg)`.
 
-Nodes communicate using the [Channel](src/main/java/eu/tsp/distsum/Channel.java) class.
-This class contains a `Cache` object. 
+Nodes communicate using the [Channel](src/main/java/eu/tsp/distsum/Channel.java) class, which contains a `Cache` field. 
 When a node *N* registers to an instance of a `Channel` object, it sets-up a listener together with a `NodeFilter` object.
 By default, a listener triggers upon all the updates in the `Cache`.
 The filter ensures that solely updates regarding node *N* trigger at the listener.
