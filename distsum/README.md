@@ -84,8 +84,11 @@ You may match a node to a cache manager by using the method `manager(int i)` of 
 
 **[Task]** In the `DistributedSum` class, fulfill the `distributedSumTest` method to create a complete execution of the system.
 To this end, you may proceed as follows:
+
 1. Define a constant `NUMBER_ROUNDS` in `DistributedSum`;
+
 2. Create the master and the slave nodes, as well as their respective cache managers;
+
 3. Define some initial constraints at the slave nodes.
 Then, execute `NUMBER_ROUNDS` rounds of computation.
 At each such round,  inject a new update in the slave nodes.
