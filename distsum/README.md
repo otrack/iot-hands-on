@@ -57,7 +57,7 @@ At core this class is a listener which receives messages from other nodes as cac
 This class should simply print the message it receives by overriding the method `receiveMessage(Message msg)`.
 
 Nodes communicate using the [Channel](src/main/java/eu/tsp/distsum/Channel.java) class, which contains a `Cache` field. 
-When a node *N* registers to an instance of a `Channel` object, it sets-up a listener together with a `NodeFilter` object.
+When a node *N* registers to an instance of a `Channel` object, it sets-up a listener together with a `NodeFilter`.
 By default, a listener triggers upon all the updates in the `Cache`.
 The filter ensures that solely updates regarding node *N* trigger at the listener.
 The [NodeFilterFactory](src/main/java/eu/tsp/distsum/NodeFilterFactory.java) implements a factory of filters.
@@ -74,7 +74,7 @@ A `CacheManager` object is an Infinispan node.
 Each such object allows to retrieve the local cache by executing the operation `getCache()`.
 We advise you hereafter to set `NUMBER_SLAVES` not to far from the total number of cores available on your machine, in order to avoid saturating it.
 
-**[Task]** Complete the `baseCommunicationTest` in the `DistributedSum` class to test that your implementation of `Channel` is correct.
+**[Task]** Complete the `baseCommunicationTest` method in `DistributedSum` to test that your implementation of `Channel` is correct.
 For instance, you may create `NUMBER_SLAVES` instances of the `SimpleNode` class and make them communicate together by sending empty messages.
 You may match a node to a cache manager by using the method `manager(int i)` of `DistributedSum`.
 
@@ -84,9 +84,10 @@ You may match a node to a cache manager by using the method `manager(int i)` of 
 
 **[Task]** In the `DistributedSum` class, fulfill the `distributedSumTest` method to create a complete execution of the system.
 To this end, you may proceed as follows:
-- Define a constant `NUMBER_ROUNDS` in `DistributedSum`;
-- Create the master and the slave nodes, as well as their respective cache managers;
-- Define some initial constraints at the slave nodes.
-Then, at each round,  inject a new update in each of the slave node.
+1. Define a constant `NUMBER_ROUNDS` in `DistributedSum`;
+2. Create the master and the slave nodes, as well as their respective cache managers;
+3. Define some initial constraints at the slave nodes.
+Then, execute `NUMBER_ROUNDS` rounds of computation.
+At each such round,  inject a new update in the slave nodes.
 Check that the master holds a correct approximation of the global sum.
-If this approximation is incorrect, you may raise an exception.
+If this approximation is incorrect at some round, raise an exception.
