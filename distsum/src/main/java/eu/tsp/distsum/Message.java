@@ -24,6 +24,10 @@ public class Message implements Serializable {
       this(from, type, null, UUID.randomUUID());
    }
 
+   public Message(String from, MessageType type,Serializable body){
+      this(from, type,body,UUID.randomUUID());
+   }
+
    public Message(String from, MessageType type,Serializable body, UUID id){
       this.from = from;
       this.type = type;
