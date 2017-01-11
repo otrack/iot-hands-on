@@ -47,7 +47,7 @@ More advanced functions, include testing and deployment.
 The structure of this project is defined in the [pom.xml](pom.xml) at the root.
 
 **[Task]** Before going further, read the [following](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) Maven beginner tutorial.
-This tutorial covers the basics of Maven you need to knwo so as to successfully do this lab.
+This tutorial covers the basics of Maven you need to know so as to successfully do this lab.
 
 The [Master](src/main/java/eu/tsp/distsum/Master.java) and [Slave](src/main/java/eu/tsp/distsum/Slave.java) classes model respectively the master and the slave nodes.
 Both classes inherit from the [Node](src/main/java/eu/tsp/distsum/Node.java) class.
