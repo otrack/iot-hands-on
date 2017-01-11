@@ -8,7 +8,7 @@ import org.infinispan.Cache;
  * where each entry is dedicated to a particular node.
  *
  * Sending a message m to a node N consists in executing
- * a put(N,m) operation on the channel.
+ * an asynchronous put(N,m) operation on the channel.
  *
  */
 public class Channel {

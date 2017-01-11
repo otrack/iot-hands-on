@@ -56,4 +56,9 @@ public class Message implements Serializable {
       this.from = from;
    }
 
+   @Override
+   public String toString(){
+     return "["+from+","+id+","+type+"]";
+   }
+
 }
