@@ -81,7 +81,7 @@ You may match a node to a cache manager by using the method `manager(int i)` of 
 
 ## 5. Going further 
 
-**[Task]** Complete the `Master` and `Slave` classes to properly send the constraints to the worker and update their local value at each node.
+**[Task]** Complete the `Master` and `Slave` classes to properly send the constraints to the workers, and update their local value at each node.
 
 **[Task]** In the `DistributedSum` class, fulfill the `distributedSumTest` method to create a complete execution of the system.
 To this end, you may proceed as follows:
