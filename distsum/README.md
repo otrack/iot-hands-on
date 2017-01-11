@@ -14,7 +14,7 @@ The ability to timely detect trends and/or popularity variations is of key inter
 In this hands-on, we consider a group of nodes that each monitor a stream of integers.
 Our objective is to *approximate* the total sum of these integers over time.
 
-In formal terms, let us denote *Time* the interval of time we are interested in, and *Nodes* the set of nodes.
+In formal terms, let us denote *Time* the interval of time, and *Nodes* the set of nodes.
 Then, we define *stream(t,N)* the value at time *t* of the stream at node *N*.
 We aim at approximating the integral of *stream(t,N)* over both *Time* and *Nodes*
 
