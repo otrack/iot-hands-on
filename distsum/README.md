@@ -58,7 +58,7 @@ This class should simply print the message it receives by overriding the method 
 
 Nodes communicate using the [Channel](src/main/java/eu/tsp/distsum/Channel.java) class.
 This class contains a `Cache` object. 
-When a node *N* registers to an instance of a `Channel` object, it sets a listener together with a `NodeFilter` object up.
+When a node *N* registers to an instance of a `Channel` object, it sets-up a listener together with a `NodeFilter` object.
 By default, a listener triggers upon all the updates in the `Cache`.
 The filter ensures that solely updates regarding node *N* trigger at the listener.
 The [NodeFilterFactory](src/main/java/eu/tsp/distsum/NodeFilterFactory.java) implements a factory of filters.
