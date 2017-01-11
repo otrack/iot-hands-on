@@ -35,7 +35,7 @@ The master then asks all the slaves to send their local value of the sum.
 The coordinator recomputes the global sum and updates the constraints at the slave nodes.
 
 **[Task]** For some node *N*, let us note respectively *l(t,N)* and *L(t,N)* the lower bound and upper bound at node *N*.
-If there is no constraint violation at time *t*, what is the value of this approximation held by the master node ? 
+If there is no constraint violation at time *t*, define the interval where lies the approximation of the master node ? 
 
 ## 4. First steps
 
