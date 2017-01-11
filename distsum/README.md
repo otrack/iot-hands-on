@@ -40,7 +40,7 @@ If there is no constraint violation at time *t*, define the interval where lies 
 ## 4. First steps
 
 The present project is in Java and built with the help of [Apache Maven](https://maven.apache.org).
-Maven is a build automation tool, used primarily in Java projects.
+Maven is a build automation tool, used primarily in Java software.
 This tool addresses several aspects of the lifetime of a software.
 In particular, it describes how the software is built, what are its dependencies and how to package it.
 More advanced functions, include testing and deployment.
