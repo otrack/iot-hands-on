@@ -34,18 +34,14 @@ public class Channel {
     * Send a message to node id.
     */
    public void send(String id, Message message){
-      nodes.put(id,message);
+      // TODO
    }
 
    /*
     * Broadcast a message to all the nodes, but the master.
     */
    public void broadcast(Message message){
-      for(String node : this.nodes.keySet()){
-         if (!node.equals(Master.MASTER)) {
-            send(node,message);
-         }
-      }
+      // TODO
    }
 
 }
