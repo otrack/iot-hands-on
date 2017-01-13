@@ -34,7 +34,7 @@ Fork this repository to start the assignment.
 Our first task is to set-up then start Apache ZooKeeper.
 
 **[TASK]** Following the official [guidelines](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html), 
-install ZooKeeper in stand alone mode.
+install ZooKeeper in stand alone mode.  
 Then, start the coordination service.
 
 ## 1.2 ZK-Shell
