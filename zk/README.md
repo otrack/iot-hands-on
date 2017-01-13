@@ -94,7 +94,7 @@ For example, in the case of a the master node failure, a secondary master (the b
 An overview of the master/worker architecture is given below.
 
 <p align="center">
-<img src="https://github.com/otrack/iot-hands-on/zk/master/architecture.png" width="600">
+<img src="https://github.com/otrack/iot-hands-on/blob/master/zk/architecture.png" width="600">
 </p>
 
 ## 3.1 The master and worker components
