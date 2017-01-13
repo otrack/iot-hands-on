@@ -25,7 +25,6 @@ Some knowledge of the Python programming language.
 There are plenty of very good tutorials online, and you should be able to learn the basics very quickly.
 A good tutorial is [here](http://www.learnpython.org/en/).
 We rely on Python 2.7, the most recent version of the 2.x series. 
-The provided VM (see below) comes with Python pre-installed.
 
 Fork this repository to start the assignment.
 
@@ -60,7 +59,7 @@ Read the documentation carefully.
 
 **[TASK]** Try the examples given in the [online documentation](http://kazoo.readthedocs.org/en/latest/basic_usage.html) and be sure that all the libraries and dependencies are correctly installed.
 
-**[TASK]** Try the *kazoo_example.py* on your VM.
+**[TASK]** Try the *kazoo_example.py* on your machine.
 
 ## 2. Leader Election
 
@@ -149,7 +148,6 @@ The file *utils.py* includes a simple task definition, functions to initializes 
 
 The architecture must be resilient to different fault scenarios.
 Let us denote **C/W/M** the respective number of clients, workers and master in a scenario.
-Note that all servers, workers and clients are executed on the same VM, thus with very short delays upon the submission of the commands and their executions (few milliseconds).
 Your implementation should work correctly in all following scenarios:
 
 1. **(1/1/1)** a worker or a client fails;
