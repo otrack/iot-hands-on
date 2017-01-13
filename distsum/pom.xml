@@ -6,13 +6,11 @@
     <groupId>eu.telecom-sudparis</groupId>
     <artifactId>distributed-sum</artifactId>
     <version>1.0</version>
-    <packaging>pom</packaging>
     <name>distributed-sum</name>
 
     <properties>
         <infinispan.version>8.0.1.Final</infinispan.version>
     </properties>
-
 
     <organization>
         <name>Telecom SudParis</name>

@@ -34,14 +34,14 @@ public class Channel {
     * Send a message to node id.
     */
    public void send(String id, Message message){
-     // TODO
+      // TODO
    }
 
    /*
     * Broadcast a message to all the nodes, but the master.
     */
    public void broadcast(Message message){
-     // TODO
+      // TODO
    }
 
 }
