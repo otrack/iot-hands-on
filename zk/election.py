@@ -13,7 +13,6 @@ class Election:
         if not (inspect.isfunction(func)) and not(inspect.ismethod(func)):
             logging.debug("not a function "+str(func))
             raise SystemError
-        # self.zk.get_children(self.election_path, self.ballot)
         self.id = zk.create(path+"/guid", "", None, True, True)
         zk.ChildrenWatch(self.election_path,self.ballot)
         
