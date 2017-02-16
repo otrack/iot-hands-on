@@ -13,25 +13,13 @@ class Election:
         if not (inspect.isfunction(func)) and not(inspect.ismethod(func)):
             logging.debug("not a function "+str(func))
             raise SystemError
-        self.id = zk.create(path+"/guid", "", None, True, True)
-        zk.ChildrenWatch(self.election_path,self.ballot)
         
     def is_leading(self):
         return self.is_leader
 
-	# perform the election
+	# TODO perform the election
     def ballot(self,event):
-        children = self.zk.get_children(self.election_path)
-        children.sort()
-        if self.election_path+"/"+children[0] == self.id:
-            self.is_leader = True
-        else:
-            self.is_leader = False
-        print str(self.is_leader)
-                        
-def Hello():
-    print("hello")
-    
+                            
 if __name__ == '__main__':
     zkhost = "127.0.0.1:2181" #default ZK host
     logging.basicConfig(format='%(asctime)s %(message)s',level=logging.DEBUG)
@@ -41,7 +29,7 @@ if __name__ == '__main__':
 
     zk = KazooClient(zkhost)
     zk.start()
-    election = Election(zk,"/election",Hello,[])
+    election = Election(zk,"/master",None,[])
         
     while True:
         time.sleep(1)

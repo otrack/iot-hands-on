@@ -73,7 +73,7 @@ In this section, you are required to implement a leader election protocol.
 ZooKeeper allows us to implement such an abstraction by exploiting the mechanisms of [watch](https://zookeeper.apache.org/doc/r3.1.2/zookeeperProgrammers.html#sc_zkDataMode_watches) and [sequential znode](https://zookeeper.apache.org/doc/r3.1.2/zookeeperProgrammers.html#Sequence+Nodes+--+Unique+Naming).
 A recipe in pseudo-code using these building blocks is available [online](http://zookeeper.apache.org/doc/trunk/recipes.html#sc_leaderElection).
 
-**[TASK]** Using the Kazoo library to issue CRUD operations and set watchers, complete the leader election class in *election.py*. Hint: processes should  compete on some ephemeral and sequential znode.
+**[TASK]** Using the Kazoo library to issue CRUD operations and set watchers, complete the leader election class in *election.py*. Hint: processes should  compete on some ephemeral and sequential znode under */master*.
 
 **[TASK]** Run several instances of *election.py*: at the end of the execution, only one leader is supposed to be elected. 
 
