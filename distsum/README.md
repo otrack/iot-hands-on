@@ -72,7 +72,7 @@ This framework is close to the more common JUnit framework, with some advanced c
 The `DistributedSum` class inherits from `MultipleCacheManagersTest` and creates initially `NUMBER_SLAVES+1` instances of the `CacheManager`class.
 A `CacheManager` object is an Infinispan node.
 Each such object allows to retrieve the local cache by executing the operation `getCache()`.
-We advise you hereafter to set `NUMBER_SLAVES` not to far from the total number of cores available on your machine, in order to avoid saturating it.
+We advise you hereafter to set `NUMBER_SLAVES` not too far from the total number of cores available on your machine, in order to avoid saturating it.
 
 **[Task]** Complete the `baseCommunicationTest` method in `DistributedSum` to test that your implementation of `Channel` is correct.
 For instance, you may create `NUMBER_SLAVES` instances of the `SimpleNode` class and make them communicate together by sending empty messages.

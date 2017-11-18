@@ -24,7 +24,7 @@ if __name__ == '__main__':
     zkhost = "127.0.0.1:2181" #default ZK host
     logging.basicConfig(format='%(asctime)s %(message)s',level=logging.DEBUG)
     if len(sys.argv) == 2:
-        zkhost=sys.argv[2]
+        zkhost=sys.argv[1]
         print("Using ZK at %s"%(zkhost))
 
     zk = KazooClient(zkhost)
